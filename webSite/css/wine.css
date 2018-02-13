@@ -4,6 +4,10 @@ a {
     background-color: transparent;
     -webkit-text-decoration-skip: objects;
 }
-a:hover { 
+a:hover {
     color: #470610;
+}
+
+.bg-primary {
+    background-color: #470610!important;
 }
