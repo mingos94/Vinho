@@ -5,7 +5,8 @@ var express = require('express'),
   mongoose = require('mongoose'),
   Wine = require('./api/models/todoListModel'), //created model loading here
   bodyParser = require('body-parser');
-  
+var cors = require('cors');
+app.use(cors());
 // mongoose instance connection url connection
 mongoose.Promise = global.Promise;
 
