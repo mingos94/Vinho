@@ -1,0 +1,9 @@
+a {
+    color: #811217;
+    text-decoration: none;
+    background-color: transparent;
+    -webkit-text-decoration-skip: objects;
+}
+a:hover { 
+    color: #470610;
+}
