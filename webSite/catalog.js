@@ -96,7 +96,7 @@ function createModal(imagesrc, name, description, grapes, country, region, price
 
     var h4_modal_title = document.createElement("h4");
     h4_modal_title.setAttribute("class", "modal-title");
-    h4_modal_title.innerHTML = "Info";
+    h4_modal_title.innerHTML = "Bottle Detail";
 
     div_modal_header.appendChild(h4_modal_title);
 
@@ -109,7 +109,7 @@ function createModal(imagesrc, name, description, grapes, country, region, price
     div_row.setAttribute("class","row");
 
     var div_col_4 = document.createElement("div");
-    div_col_4.setAttribute("class","col-4");
+    div_col_4.setAttribute("class","col-3");
 
     var image = document.createElement("img");
     image.setAttribute("class", "card-img-top");
@@ -129,11 +129,11 @@ function createModal(imagesrc, name, description, grapes, country, region, price
 
     var tbody = document.createElement("tbody");
 
-    tbody.appendChild(generateTrLine("name",name));
-    tbody.appendChild(generateTrLine("description",description));
-    tbody.appendChild(generateTrLine("country",country));
-    tbody.appendChild(generateTrLine("region",region));
-    tbody.appendChild(generateTrLine("price",price));
+    tbody.appendChild(generateTrLine("Name",name));
+    tbody.appendChild(generateTrLine("Description",description));
+    tbody.appendChild(generateTrLine("Country",country));
+    tbody.appendChild(generateTrLine("Region",region));
+    tbody.appendChild(generateTrLine("Price",price));
 
     table.appendChild(tbody);
 
@@ -171,6 +171,7 @@ function createModal(imagesrc, name, description, grapes, country, region, price
 function generateTrLine(key, value){
     var tr = document.createElement("tr");
     var td_key = document.createElement("td");
+    td_key.setAttribute("class","negro");
     td_key.innerHTML = key;
     var td_value = document.createElement("td");
     td_value.innerHTML = value;

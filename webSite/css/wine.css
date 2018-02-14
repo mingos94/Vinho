@@ -11,3 +11,23 @@ a:hover {
 .bg-primary {
     background-color: #470610!important;
 }
+
+.modal-content{
+    margin-top: 50%;
+    margin-left: -50%;
+    width: 100%;
+    width: 900px;
+}
+
+
+.modal table .negro{
+    font-weight: bold;
+}
+
+
+.modal img{
+    height: 200px;
+    width: 350px;
+    margin-top: 50px;
+    margin-left: -60px;
+}
